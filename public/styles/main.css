@@ -1,7 +1,27 @@
-body{
-    background-color: bisque;
+:root{
+    --black: #2b2727;
+    --white: #d3d3d3;
+    --red: #a81b1b;
+    --green: rgb(8, 172, 8);
+    --blue: rgb(12, 12, 192);
 }
 
+body{
+    background-color: var(--white);
+    width: 80%;
+}
 .menu{
-    background-color: darkcyan;
+    width: 30%;
+}
+.menu a{
+    background-color: rgb(147, 168, 68);
+    padding: 5px 20px;
+    margin: 5px;
+    width: 50%;
+    border-radius: 28px;
+    border: solid 2px black;
+    box-shadow: inset 0 5px 3px #129764;
+}
+.menu a:hover{
+    background-color: cadetblue;
 }
