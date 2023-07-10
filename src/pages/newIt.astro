@@ -1,3 +1,6 @@
+---
+const pageTitle = 'Lo nuevo en IT';
+---
 <html lang="es">
     <head>
         <meta charset="utf-8" />
@@ -5,13 +8,13 @@
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
         <link rel="stylesheet" href="/styles/main.css">
-        <title>Nuevo en IT</title>
+        <title>{pageTitle}</title>
     </head>
     <body>
         <div class="menu">
 			<a href="/">Home</a>
 			<a href="/about/">About</a>
-			<a href="/newIt/">Mundo actual</a>
+			<a href="/newIt/">{pageTitle}</a>
 		</div>
 
         <h1>El papel de la tecnología en el mundo actual</h1>
