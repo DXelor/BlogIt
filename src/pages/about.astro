@@ -1,5 +1,17 @@
 ---
-const pageTitle = 'About';
+const pageTitle = 'About Me';
+const identity = {
+	firstName: 'Amy',
+	country: 'Shangai',
+	occupation: 'Space Engineer',
+	hobbies: ['Anime', 'video games', 'swim'],
+};
+
+const skills = ['HTML', 'CSS', 'JavaScript', 'Angular'];
+
+const happy = true;
+const finished = false;
+const goal = 3;
 ---
 <html lang="es">
 	<head>
@@ -8,7 +20,7 @@ const pageTitle = 'About';
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<link rel="stylesheet" href="/styles/main.css" />
-		<title>Acerca de</title>
+		<title>{pageTitle}</title>
 	</head>
 
 	<body>
@@ -19,16 +31,23 @@ const pageTitle = 'About';
 		</div>
 		
 		<h1>{pageTitle}</h1>
-		<h2>... and my new Astro site!</h2>
+		
+		<p>Hola! aqui te muestro mis datos: </p>
+		<u>
+			<li>Mi nombre {identity.firstName}.</li>
+			<li>Vivo en {identity.country} y trabajo como {identity.occupation}.</li>
+			{identity.hobbies.length >= 2 &&
+				<li>mis aficiones son: {identity.hobbies[0]} y {identity.hobbies[1]}</li>
+			}
+		</u>
+		<p>Mis habilidades son:</p>
+		<ul>
+			{skills.map((skill) => <li>{skill}</li>)}
+		</ul>
+		{happy && <p>I am happy to be learning Astro!</p>}
 
-		<p>
-			I am working through Astro's introductory tutorial. This is the
-			second page on my website, and it's the first one I built myself!
-		</p>
+		{finished && <p>I finished this tutorial!</p>}
 
-		<p>
-			This site will update as I complete more of the tutorial, so keep
-			checking back and see how my journey is going!
-		</p>
+		{goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
 	</body>
 </html>
