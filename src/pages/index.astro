@@ -1,3 +1,6 @@
+---
+import { SITE_TITLE } from '../consts';
+---
 <html lang="es">
 	<head>
 		<meta charset="utf-8" />
@@ -5,7 +8,8 @@
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<link rel="stylesheet" href="/styles/main.css" />
-		<title>BlogIt</title>
+
+		<title>{SITE_TITLE}</title>
 	</head>
 	<body>
 		<div class="menu">
