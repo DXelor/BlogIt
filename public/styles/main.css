@@ -1,6 +1,6 @@
 :root{
     --black: #2b2727;
-    --white: #d3d3d3;
+    --white: #adadad;
     --red: #a81b1b;
     --green: rgb(8, 172, 8);
     --blue: rgb(12, 12, 192);
@@ -24,4 +24,9 @@ body{
 }
 .menu a:hover{
     background-color: cadetblue;
+}
+
+h1{
+    color: purple;
+    font-size: 4rem;
 }
