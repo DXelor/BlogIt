@@ -1,4 +1,6 @@
 ---
+import '../styles/main.css';
+import '../styles/global.css';
 const pageTitle = 'About Me';
 const identity = {
 	firstName: 'Amy',
@@ -23,7 +25,6 @@ const textCase = "uppercase";
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<link rel="stylesheet" href="/styles/main.css" />
 		<title>{pageTitle}</title>
 		<style define:vars={{skillColor, fontWeight, textCase}}>
 			.skill{
