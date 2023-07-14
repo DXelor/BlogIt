@@ -5,24 +5,28 @@ body {
     text-align: center
 }
 
-#pagewidth {
+#page {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     text-align: left;
     margin: 0 auto
 }
 
 #header {
-    position: relative;
-    height: 2em;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    height: 6em;
     background-color: #33738c;
     width: 100%;
-    display: block;
-    overflow: auto
 }
+
 
 #leftcol {
     width: 25%;
-    float: left;
+    display: flex;
     position: relative;
     background-color: #034603
 }
