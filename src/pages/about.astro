@@ -2,8 +2,8 @@
 import "../styles/main.css";
 import "../styles/global.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 const pageTitle = "About Me";
 const identity = {
 	firstName: "Amy",
@@ -42,7 +42,6 @@ const textCase = "uppercase";
 	<body>
 		<Header />
 
-
 		<h1 class="mt-3">{pageTitle}</h1>
 
 		<p>Hola! aquí te muestro mis datos:</p>
@@ -78,5 +77,8 @@ const textCase = "uppercase";
 			)
 		}
 		<Footer />
+		<script>
+			import "../scripts/menu.js";
+		</script>
 	</body>
 </html>
