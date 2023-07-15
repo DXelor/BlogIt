@@ -2,7 +2,7 @@
 import "../styles/main.css";
 import "../styles/global.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navigation from '../components/Navigation.astro';
+import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 const pageTitle = "About Me";
 const identity = {
@@ -40,7 +40,8 @@ const textCase = "uppercase";
 	</head>
 
 	<body>
-		<Navigation />
+		<Header />
+
 
 		<h1 class="mt-3">{pageTitle}</h1>
 
