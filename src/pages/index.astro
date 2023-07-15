@@ -1,6 +1,7 @@
 ---
 import '../styles/main.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Navigation from '../components/Navigation.astro';
 const pageTitle = 'blog';
 ---
 <html lang="es">
@@ -13,30 +14,7 @@ const pageTitle = 'blog';
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Mi Sitio</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/blogPage/">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/about/">Acerca de</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/newIt/">Nuevo en IT</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
+		<Navigation />
 		<ul class="list-unstyled">
 			<li><a href="/post/post-1/" class="text-primary">Post 1</a></li>
 			<li><a href="/post/post-2/" class="text-success">Post 2</a></li>
